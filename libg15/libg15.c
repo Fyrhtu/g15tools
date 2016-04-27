@@ -42,7 +42,9 @@ static pthread_mutex_t libusb_mutex;
 /* to add a new device, simply create a new DEVICE() in this list */
 /* Fields are: "Name",VendorID,ProductID,Capabilities */
 const libg15_devices_t g15_devices[] = {
+	
     DEVICE("Logitech G15",0x46d,0xc222,G15_LCD|G15_KEYS),
+    DEVICE("Logitech G110",0x46d,0xc22b,G15_KEYS),
     DEVICE("Logitech G11",0x46d,0xc225,G15_KEYS),
     DEVICE("Logitech Z-10",0x46d,0x0a07,G15_LCD|G15_KEYS|G15_DEVICE_IS_SHARED),
     DEVICE("Logitech G15 v2",0x46d,0xc227,G15_LCD|G15_KEYS|G15_DEVICE_5BYTE_RETURN),
